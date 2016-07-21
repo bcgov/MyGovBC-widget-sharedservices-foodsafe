@@ -5,7 +5,10 @@ const widgetModule = angular.module('mygov.widget.info.base', [])
     $stateProvider
       .state('sampleinfo', {
         url: '/sampleinfo',
-        template: '<sampleinfo></sampleinfo>'
+        template: '<sampleinfo></sampleinfo>',
+        ncyBreadcrumb: {
+          label: 'Info Only Sample'
+        }
       })
    
   }])

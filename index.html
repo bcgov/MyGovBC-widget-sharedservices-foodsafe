@@ -1,25 +1,28 @@
-<div class="container">
-    <h1>Super Simplified Information Only Page</h1>
-    <p class="lead">Brought to you by the Ministry of Keeping it Simple</p>
-    <p>
-        With your MyGov Account, you will be able to quickly access
-        government services related to your simple super service provider.
-    </p>
-    <div ui-view>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Service Items</h3>
-            </div>
-            <div class="panel-body">
-                <ol>
-                    <li><a href="https://ltsa.ca/">Land Titles</a></li>
-                </ol>
+<div class="container wrapper">
+    <div ncy-breadcrumb></div>
+    <div class="row">
+        <div class="col-sm-3">
+            <menubox/>
+        </div>
+        <div class="col-sm-9">
+            <h1 class="page-header">Super Simplified Information Only Page</h1>
+            <p class="lead">Brought to you by the Ministry of Keeping it Simple</p>
+            <p>
+                With your MyGov Account, you will be able to quickly access
+                government services related to your simple super service provider.
+            </p>
+            <div ui-view>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Service Items</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ol>
+                            <li><a href="https://ltsa.ca/">Land Titles</a></li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-        No limits on media type:
-
-        <Br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <br>
     </div>
 </div>
