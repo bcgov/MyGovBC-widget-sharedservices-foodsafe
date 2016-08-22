@@ -7,10 +7,9 @@ const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
         url: '/foodsafe',
         template: '<foodsafe></foodsafe>',
         ncyBreadcrumb: {
-          label: 'Foodsafe'
+          label: 'FoodSafe'
         }
       })
-   
   }])
   .component('foodsafe', {
     templateUrl: require('./index.html'),
@@ -18,5 +17,11 @@ const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
 
     }]
   });
+
+// Includes
+require('./search/index.html');
+require('./search/index.js');
+require('./search/index.less');
+require('./search/service.js');
 
 module.exports = widgetModule;
