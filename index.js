@@ -1,18 +1,18 @@
 'use strict';
 
-const widgetModule = angular.module('mygov.widget.info.base', [])
+const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
   .config(['$stateProvider', function ($stateProvider, $log) {
     $stateProvider
-      .state('sampleinfo', {
-        url: '/sampleinfo',
-        template: '<sampleinfo></sampleinfo>',
+      .state('foodsafe', {
+        url: '/foodsafe',
+        template: '<foodsafe></foodsafe>',
         ncyBreadcrumb: {
-          label: 'Info Only Sample'
+          label: 'Foodsafe'
         }
       })
    
   }])
-  .component('sampleinfo', {
+  .component('foodsafe', {
     templateUrl: require('./index.html'),
     controller: ['$scope', function ($scope) {
 
