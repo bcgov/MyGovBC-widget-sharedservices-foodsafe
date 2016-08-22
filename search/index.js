@@ -7,7 +7,8 @@ angular.module('mygov.widget.sharedservices.foodsafe')
         url: '/foodsafe/search',
         template: '<search></search>',
         ncyBreadcrumb: {
-          label: 'Search Foodsafe Certficate'
+          parent: 'foodsafe',
+          label: 'Search for FoodSafe Certficates'
         }
       })
 
