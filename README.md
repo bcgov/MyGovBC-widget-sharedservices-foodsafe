@@ -1,40 +1,10 @@
-# MyGov Widget Information Only Sample Base
+# MyGov FoodSafe 
 
-A sample **information only** widget for myGov-core-client runtime.  As a Service Provider choose this widget if you need just a simple read-only widget.
+FoodSafe widget for the MyGov platform.  Featuring:
 
-## Process Overview
+1. Get Certified
+2. Discover FoodSafe Certificate status
 
- A Service Provider may clone this repo, makes changes, and push it into thier own repo.  Once complete the myGov-core-client is modified to include this widget.
-
-## Cloning/Forking Instructions
-
-Either clone this repository or fork it on BitBucket/Github then clone your fork.  You should also rename it replacing myorg and myservice with appropriate values.
-
-    git clone git@bitbucket.org:GregTurner/mygov-widget-info-base.git myGov-widget-myorg-myservice
-
-Sign-up and/or create a repo in BitBucket/Github using their web site.  If you want to not open source your code, use a private repository.  BitBucket gives you some for free.
-
-- [https://bitbucket.org/](https://bitbucket.org/)
-- [https://github.com/](https://github.com/)
-
-TODO: link to guides on Github.  You MUST read the guide about using public repositories.
-
-*If your new to git repos on the internet, SSH is the preferred authentication method.*
-
-We don't want you modifying our sample widget repo.  The next step is to change the origin of your cloned widget so that you can work on your own or as a team.
-
-	cd myGov-widget-myorg-myservice
-	git remote set-url origin git@bitbucket.org:<yourusername>/mygov-widget-myorg-myservice.git
-
-Push your local changes to the remote repo in BitBucket/Github
-
-	git push -u origin --all
-
-You should see your new sample widget appear in the BitBuckets/Github web site.
-
-## Updating your README.md and package.json
-
-Your sample comes with these instructions, but we need to change this README.md to something more appropriate.
 
 Update the package.json file with appropriate values.
 
