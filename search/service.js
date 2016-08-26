@@ -3,6 +3,10 @@
 angular.module('mygov.widget.sharedservices.foodsafe')
   .factory('foodSafeService', function ($resource, appConstants) {
     'ngInject'
+    var service = {}
 
-    return null;
+    //TODO: write methods
+
+
+    return service;
   })
