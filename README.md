@@ -64,12 +64,19 @@ The behavior of a module often needs to vary from instance to instance. For reas
 
 Clone the [myGov-core-client](https://bitbucket.org/fredwen/mygov-core-client) and [myGov-core-server](https://bitbucket.org/fredwen/mygov-core-server). And follow instructions in the README.md to install your new widget, build and run your very own MyGov site.
 
-## Future Considerations
 
-The above process can be stream-lined to make it easier for widget developers.  Here's some considerations for enhancement:
+## License
 
-1. Provide a sample README.md file to fill out
-2. Provide a web UI to automatically create a repo for the logged in user.
-2. Using a Node.JS CLI to configure the new widget or have a script from the web UI do this step.
-3. Provide a cloud SaaS IDE for developers.
-4. Provide a OpenShift template for creating the MyGov environment. Do this automatically via web UI.
+    Copyright 2016 Province of British Columbia
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at 
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
