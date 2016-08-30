@@ -13,8 +13,12 @@ const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
   }])
   .component('foodsafe', {
     templateUrl: require('./index.html'),
-    controller: ['$scope', function ($scope) {
-
+    controller: ['$scope', 'foodSafeService', function ($scope, foodSafeService) {
+      foodSafeService.getStatus().then(function (status) {
+        $scope.status = status;
+      }).catch(function (error) {
+        $scope.error = "FoodSafe Service is currently unavailable.  Some limited functionality still enabled.";
+      });
     }]
   });
 
@@ -22,6 +26,6 @@ const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
 require('./search/index.html');
 require('./search/index.js');
 require('./search/index.less');
-require('./search/service.js');
+require('./service.js');
 
 module.exports = widgetModule;

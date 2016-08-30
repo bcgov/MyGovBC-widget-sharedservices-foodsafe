@@ -8,16 +8,18 @@
             <div class="row">
                 <div class="col-sm-9 col-xs-8">
                     <h1 class="page-header">FoodSafe Services</h1>
+                    <div ng-show="error" class="alert alert-warning alert-dismissible">{{error}}</div>
                     <p>The FOODSAFE Program is a comprehensive food safety training program designed for the food
                         service industry.</p>
-                    <div class="row">
+                    <div class="row" ng-show="status || error">
                         <div class="col-sm-6">
                             <h2>Need to Get Certified?</h2>
                             <p>Find a course in-person, correspondance or online</p>
                             <a class="btn btn-success" href="http://www.foodsafe.ca/course_search?one_level=1"><i class="fa fa-external-link" aria-hidden="true"></i> Find Courses</a>
 
                         </div>
-                        <div class="col-sm-6">
+
+                        <div class="col-sm-6" ng-hide="error">
                             <h2>Already Certified?</h2>
                             <p>Find out the current status of your certification</p>
                             <a class="btn btn-success" ui-sref="search">Search for my Certificate</a>
