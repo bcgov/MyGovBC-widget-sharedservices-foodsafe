@@ -1,5 +1,4 @@
 'use strict';
-import statusComponent from './se';
 
 const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
   .config(['$stateProvider', function ($stateProvider, $log) {
@@ -21,8 +20,7 @@ const widgetModule = angular.module('mygov.widget.sharedservices.foodsafe', [])
         $scope.error = "FoodSafe Service is currently unavailable.  Some limited functionality still enabled.";
       });
     }]
-  })
-  .directive('foodSafeStatus', statusComponent);
+  });
 
 // Includes
 require('./search/index.html');
